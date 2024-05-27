@@ -1083,49 +1083,163 @@ main .go-top {
     }
 }
 
-@media screen and (max-width: 700px) {
-    html {font-size: 10px;}
+
+@media screen and (max-width: 767px) {
+    /* html {font-size: 10px;} */
+    header {
+        height: 90px;
+    }
     .cover .container {
         max-width: 500px;
+        height: 90px;
+        padding-top: 0;
     }
     .cover .container .logo {
-        font-size: 7.3rem;
+        display: none;
+    }
+    .cover .container nav {
+        margin-bottom: 0;
+    }
+    .cover .container nav ul {
+        display: flex;
+        justify-content: space-around;
     }
     .cover .container nav ul li {
-        font-size: 5rem;
+        font-size: 2.7rem;
+        margin-bottom: 0px;
+        display: inline-block;
+        line-height: 90px;
+        padding-left: 35px;
+    }
+    .cover .container nav ul li:nth-child(2) {
+        text-align: left;
+    }
+    .cover .container nav ul li:nth-child(3) {
+        text-align: left;
     }
     .cover .container nav ul li:nth-child(1)::after {
-        width: 280px;
+        width: 260px;
         top: 35px;
+        display: none;
     }
     .cover .container nav ul li:nth-child(2)::before {
-        width: 130px;
-        top: 35px;
+        display: none;
     }
     .cover .container nav ul li:nth-child(2)::after {
-        width: 130px;
+        width: 250px;
         top: 35px;
+        display: none;
     }
     .cover .container nav ul li:nth-child(3)::before {
-        width: 220px;
+        width: 190px;
         top: 35px;
+        right: 0;
+        display: none;
     }
+    .cover .container .scroll {
+        display: none;
+    }
+    .cover .container span {
+        width: 60px;
+        height: 60px;
+        background: url('../images/mylogo.png')no-repeat center/cover;
+        margin: 0;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    .cover .container .text .name {
+        display: none;
+    }
+    .cover .container .text p {
+        display: none;
+    }
+
+
     main .inner {
         max-width: 550px;
     }
     .about-wrap {
         width: 550px;
+        padding-top: 50px;
+    }
+    main .about-wrap .about h1 {
+        font-size: 6.6rem;
+    }
+    main .about-wrap .about .h {
+        font-size: 5.6rem;
+        position: absolute;
+        top: 43px;
+        right: 0;
+        
+    }
+    main .about-wrap .about span {
+        position: absolute;
+        top: 85px;
+        width: 275px;
+        left: 5px;
+        height: 5px;
+    }
+
+    main .about-wrap .profile {
+        flex-wrap: wrap;
+    }
+    main .about-wrap .profile .img-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    main .about-wrap .skill ul li {
+        flex: 1 0 50%;
+        margin-bottom: 30px;
+    }
+
+    main .inner .works {
+        padding: 0 20px 5px 20px;
+        background-color: #FF3B45;
+        color: #F7F7F7;
+        display: inline-block;
+        /* border-radius: 13px; */
     }
     h3 {
         display: flex;
         justify-content: center;
     }
     h3 img  {
-        width: 18rem;
+        width: 55%;
+        margin-top: 30px;
+        margin-bottom: -20px;
+    }
+    .folder {
+        width: 97%;
+    }
+    main .inner .motion {
+        border-radius: 15px;
+    }
+    main .inner .motionshadow {
+        filter: drop-shadow(-5px -5px 0 #43FF9C);
+        filter: none;
+    }
+    .codingshadow {
+        filter: none;
+    }
+    main .inner .coding {
+        width: 100%;
+        border-radius: 15px;
+    }
+    .inner .folder .clip .img-wrap {
+        height: 270px;
+        margin-bottom: 25px;
+    }
+    .folder .clip p {
+        margin: 15px 0;
+    }
+    main .inner .box {
+        background-color: #fff;
     }
     .popup .iframebox {
-        width: 600px;
-        height: 450px;
+        width: 300px;
+        height: 200px;
     }
     main .inner .motion {
         clip-path: none;
@@ -1141,13 +1255,24 @@ main .go-top {
     }
     main .inner .coding {
         clip-path: none;
+        margin-top: 120px;
     }
-    @keyframes tmt {
-        0% { height: 380px;}
-        27% { height: 387px; border-radius: 0 0 410px 400px;}
-        50% { height: 379px;}
-        70% { height: 385px;}
-        100% { height: 380px;}
+    .contact .inner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .contact .inner .tomato {
+        border-radius: 40% 60% 65% 35% / 40% 50% 55% 60%;
+        border-radius: 400px;
+        height: 500px;
+        animation: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .inner .tomato .content h1 {
+        padding-top: 0;
     }
     .contact .inner .tomato .content p {
         font-size: 16px;
@@ -1157,188 +1282,96 @@ main .go-top {
     }
     .contact .inner .tomato .resume {
         scale: 0.5;
-        transform: translate(-100%, 10%);
+        transform: translate(-100%, 25%);
     }
 }
-@media screen and (max-width: 550px) {
-    .cover .container {
-        max-width: 400px;
-    }
-    .cover .container .logo {
-        font-size: 6rem;
-    }
-    .cover .container nav ul li {
-        font-size: 4.7rem;
-    }
-    .cover .container nav ul li:nth-child(1)::after {
-        width: 200px;
-        top: 35px;
-    }
-    .cover .container nav ul li:nth-child(2)::before {
-        width: 90px;
-        top: 35px;
-    }
-    .cover .container nav ul li:nth-child(2)::after {
-        width: 90px;
-        top: 35px;
-    }
-    .cover .container nav ul li:nth-child(3)::before {
-        width: 140px;
-        top: 35px;
-    }
-    main .inner {
-        max-width: 400px;
-    }
-    .about-wrap {
-        width: 400px;
-    }
-    main .about-wrap .about {
-        display: flex;
-        justify-content: center;
-    }
-    main .about-wrap .about span {
-        display: none;
-    }
-    .about-wrap .h {
-        display: none;
-    }
-    main .about-wrap .profile {
-        display: block;
-    }
-    main .about-wrap .profile .img-wrap {
-        justify-content: center;
-    }
-    main .about-wrap .skill {
-        width: 75%;
-        margin: 0 auto;
-    }
-    main .about-wrap .skill ul {
-        display: block;
-    }
-    main .about-wrap .skill ul li {
-        margin-bottom: 30px;
-    }
-    .popup .iframebox {
-        width: 400px;
-        height: 300px;
-    }
-    main .inner .coding-wrap .codingshadow {
-        transform: translate(5px, 12px);
-    }
-    @keyframes tmt {
-        0% { height: 250px;}
-        27% { height: 257px; border-radius: 0 0 410px 400px;}
-        50% { height: 249px;}
-        70% { height: 255px;}
-        100% { height: 250px;}
-    }
-    .contact .inner .tomato .content h1 {
-        font-size: 4rem;
-        padding-top: 20px;
-    }
-    .contact .inner .tomato .content p {
-        font-size: 10px;
-    }
-    .contact .inner .tomato .content h2 {
-        font-size: 3.2rem;
-    }
-    .contact .inner .tomato .resume {
-        scale: 0.3;
-        transform: translate(-165%, -50%);
-    }
+@media screen and (max-width: 605px) {
+
 }
-@media screen and (max-width: 318px) {
-    .cover .container {
-        max-width: 260px;
-    }
-    .cover .container .logo {
-        font-size: 3.8rem;
-    }
-    .cover .container nav ul li {
-        font-size: 3.2rem;
-    }
-    .cover .container nav ul li:nth-child(1)::after {
-        width: 120px;
-        top: 20px;
-    }
-    .cover .container nav ul li:nth-child(2)::before {
-        width: 55px;
-        top: 20px;
-    }
-    .cover .container nav ul li:nth-child(2)::after {
-        width: 55px;
-        top: 20px;
-    }
-    .cover .container nav ul li:nth-child(3)::before {
-        width: 80px;
-        top: 20px;
-    }
-    .cover .container span {
-        margin: 20px 0 10px 0;
-    }
-    main .inner {
-        max-width: 260px;
-    }
-    .about-wrap {
-        width: 260px;
-    }
-    h1 {
-        font-size: 3rem;
-    }
-    main .about-wrap .skill {
-        width: 95%;
-        margin: 0 auto;
-    }
-    main .about-wrap .skill ul {
-        display: block;
-    }
-    main .about-wrap .skill ul li {
-        margin-bottom: 30px;
-        font-size: 18px;
-        padding: 5px 40px 5px 50px;
-    }
-    main .inner .motionshadow {
-        filter: drop-shadow(-8px -6px 0 #43FF9C);
-    }
-    h3 img {
-        width: 100%;
-    }
-    .folder {
-        padding: 10px;
-    }
-    .folder .clip .img-wrap {
-        height: 116px;
-    }
-    .codingshadow {
-        filter: drop-shadow(-9px -6px 0 #FF3B45);
-    }
-    .popup .iframebox {
-        width: 400px;
-        height: 300px;
-    }
-    main .inner .coding-wrap .codingshadow {
-        transform: translate(2px, 12px);
-    }
-    @keyframes tmt {
-        0% { height: 160px;}
-        27% { height: 167px; border-radius: 0 0 410px 400px;}
-        50% { height: 159px;}
-        70% { height: 165px;}
-        100% { height: 160px;}
-    }
-    .contact .inner .tomato .content h1 {
-        font-size: 2.7rem;
-        padding-top: 20px;
-    }
-    .contact .inner .tomato .content p {
-        font-size: 7px;
-        margin: 7px;
-    }
-    .contact .inner .tomato .content h2 {
-        font-size: 2rem;
-    }
-    .contact .inner .tomato .resume {
-        scale: 0.2;
-        transform: translate(-250%, -140%);
-    }
+@media screen and (max-width: 395px) {
+   header {
+    height: 60px;
+   }
+   .cover .container {
+    max-width: 300px;
+    height: 60px;
+   }
+   .cover .container nav ul li {
+    font-size: 1.5rem;
+    line-height: 60px;
+    padding-left: 30px;
+   }
+   .cover .container span {
+    width: 40px;
+    height: 40px;
+    top: 10px; left: 10px;
+   }
+
+   main .inner {
+    max-width: 340px;
+   }
+   .about-wrap {
+    width: 300px;
+   }
+   main .about-wrap .about h1 {
+    font-size: 3.6rem;
+   }
+   main .about-wrap .about .h {
+    font-size: 4.5rem;
+    top: 53px;
+   }
+   main .about-wrap .about span {
+    width: 90px;
+    height: 4px;
+   }
+   main .about-wrap .profile .img-wrap img{
+    width: 130px;
+   }
+   main .about-wrap .skill ul li {
+    margin-bottom: 20px;
+   }
+   h3 img {
+    width: 90%;
+    margin-top: 15px;
+   }
+   main .inner .works {
+    border-radius: 0px;
+   }
+   .folder {
+    width: 100%
+   }
+   main .inner .motion {
+    border-radius: 0px;
+   }
+   main .inner .coding {
+    border-radius: 0px;
+    margin-top: 50px;
+   }
+   .folder .clip p {
+    margin: 10xp 0;
+   }
+   .inner .folder .clip .img-wrap {
+    height: 160px;
+   }
+   .contact .inner .tomato {
+    height: 300px;
+   }
+   .contact .inner .tomato .content p {
+    font-size: 10px;
+    margin: 20px;
+}
+.contact .inner .tomato .content h2 {
+    font-size: 3rem;
+}
+.contact .inner .tomato .content h1 {
+    font-size: 3.7rem;
+}
+.contact .inner .tomato .resume {
+    scale: 0.3;
+    transform: translate(-170%, -40%);
+}
+main .go-top {
+    bottom: 20px;
+    right: 20px;
+}
 }

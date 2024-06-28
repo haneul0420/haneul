@@ -317,6 +317,9 @@ main .about-wrap .profile {
     padding: 20px;
     display: flex;
 }
+main .about-wrap .profile .about-txt ul li {
+    font-family: 'Orbit-Regular';
+}
 main .about-wrap .profile .img-wrap {
     margin: 20px;
     position: relative;
@@ -1036,6 +1039,7 @@ main .go-top {
     main .about-wrap .profile .about-txt {
         padding: 1.875rem;
     }
+
     main .about-wrap .skill ul li {
         padding: 15px 30px 15px 70px;
     }

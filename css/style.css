@@ -327,7 +327,7 @@ main .about-wrap .profile .img-wrap {
     align-items: center;
 }
 main .about-wrap .profile .img-wrap img {
-    width: 18.75rem;
+    width: 21.75rem;
 }
 #ketchup {
     width: 70px;
@@ -337,12 +337,16 @@ main .about-wrap .profile .img-wrap img {
     transform: rotate(15deg);
 }
 main .about-wrap .profile .about-txt {
-    padding: 7.5rem 1.875rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
     font-size: 20px;
     font-weight: bold;
     color: #353535;
-    text-align: center;
-    line-height: 2;
+    text-align: left;
+    line-height: 3;
 }
 
 main .about-wrap .skill {
@@ -473,7 +477,18 @@ main .inner .motionshadow {
     border-radius: 5px;
     cursor: pointer;
 }
+.folder .clip .img-wrap2 {
+    width: 100%;
+    height: 175px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 .folder .clip .img-wrap:hover img {
+    scale: 1.1;
+}
+.folder .clip .img-wrap2:hover img {
     scale: 1.1;
 }
 .folder .clip img {

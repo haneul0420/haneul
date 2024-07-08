@@ -1304,8 +1304,110 @@ main .go-top {
         transform: translate(-100%, 25%);
     }
 }
-@media screen and (max-width: 605px) {
-
+@media screen and (max-width: 570px) {
+    header {
+        height: 75px;
+    }
+    .cover .container {
+        max-width: 400px;
+        height: 75px;
+    }
+    .cover .container nav ul li {
+        font-size: 2.2rem;
+        line-height: 75px;
+        padding-left: 30px;
+       }
+       .cover .container span {
+        width: 50px;
+        height: 50px;
+        top: 13px; left: 15px;
+       }
+       main .inner {
+        max-width: 440px;
+       }
+       .about-wrap {
+        width: 400px;
+       }
+       main .about-wrap .about h1 {
+        font-size: 4.8rem;
+       }
+       main .about-wrap .about .h {
+        font-size: 5.2rem;
+        top: 50px;
+       }
+       main .about-wrap .about span {
+        width: 160px;
+        height: 4px;
+       }
+       .inner .folder .clip .img-wrap {
+        height: 210px;
+       }
+       .contact .inner .tomato {
+        height: 420px;
+       }
+       .contact .inner .tomato .content p {
+        font-size: 10px;
+        margin: 20px;
+    }
+    .contact .inner .tomato .content h2 {
+        font-size: 4rem;
+    }
+    .contact .inner .tomato .content h1 {
+        font-size: 4.7rem;
+    }
+    .contact .inner .tomato .resume {
+        scale: 0.4;
+        transform: translate(-130%, 0%);
+    }
+}
+@media screen and (max-width: 450px) {
+    header {
+        height: 68px;
+    }
+    .cover .container {
+        max-width: 380px;
+        height: 68px;
+    }
+    .cover .container nav ul li {
+        font-size: 1.9rem;
+        line-height: 68px;
+        padding-left: 35px;
+       }
+       .cover .container span {
+        width: 40px;
+        height: 40px;
+        top: 14px; left: 12px;
+       }
+       main .inner {
+        max-width: 380px;
+       }
+       .about-wrap {
+        width: 340px;
+       }
+       main .about-wrap .about h1 {
+        font-size: 4.1rem;
+       }
+       main .about-wrap .about .h {
+        font-size: 4.8rem;
+        top: 53px;
+       }
+       main .about-wrap .about span {
+        width: 120px;
+        height: 4px;
+       }
+       .inner .folder .clip .img-wrap {
+        height: 170px;
+       }
+       .contact .inner .tomato {
+        height: 350px;
+       }
+       .contact .inner .tomato .resume {
+        scale: 0.35;
+        transform: translate(-145%, -10%);
+    }
+    main .about-wrap .profile .about-txt {
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 395px) {
    header {
